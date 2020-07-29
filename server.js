@@ -8,7 +8,14 @@ const app = express();
 
 // https://expressjs.com/en/starter/basic-routing.html
 app.get('/', (request, response) => {
-  response.send('I love CodersX');
+  response.send(`<ul>
+<li>đi chợ</li>
+<li>nấu cơm</li>
+<li>rửa bát</li>
+<li>học code tại coderX</li>
+</ul>`
+                
+                );
 });
 
 // listen for requests :)
